@@ -16,7 +16,6 @@
 
 header {grid-area: heady; background: #FFE6AB}
 main {grid-area: mainy; background: #FFE6AB;}
-footer {grid-area: footy; background: #FFE6AB;}
 
 @media screen and (max-width: 640px) {
     .container {
@@ -26,18 +25,6 @@ footer {grid-area: footy; background: #FFE6AB;}
       "heady"
       "mainy"
       "mainy"
-      "footy";
-    }
-    nav ul {
-      flex-flow: column nowrap;
-      text-align: center;
-    }
-    nav ul li a {
-      display: block;
-      padding: 20px 40px;
-      margin: 5px;
-      border: 1px black solid;
-      background: white;
     }
   }
 
@@ -52,13 +39,11 @@ footer {grid-area: footy; background: #FFE6AB;}
     1fr              3fr;
     grid-template-areas:
     "heady           heady"
-    "mainy          mainy"
-    "footy           footy";
+    "mainy          mainy";
   }
 
   header {grid-area: heady; background: #FFE6AB}
   main {grid-area: mainy; background: #FFE6AB;}
-  footer {grid-area: footy; background: #FFE6AB;}
 
   @media screen
     and (min-width: 641px)
@@ -68,8 +53,7 @@ footer {grid-area: footy; background: #FFE6AB;}
         1fr               1fr;
         grid-template-areas:
         "heady"          "heady"
-        "mainy"          "mainy"
-        "footy"          "footy";
+        "mainy"          "mainy";
       }
     }
 
@@ -80,18 +64,13 @@ footer {grid-area: footy; background: #FFE6AB;}
         1fr;
         grid-template-areas:
         "heady"
-        "mainy"
-        "footy"
+        "mainy";
       }
-      nav ul {
-        flex-flow: column nowrap;
-        text-align: center;
-      }
-      nav ul li a {
-        display: block;
-        padding: 20px 40px;
-        margin: 5px;
-        border: 1px black solid;
-        background: white;
+      .column-4 {
+        float: left;
+        width: 40%;
+        padding: 10px;
+        margin:20px;
+        height: 250px;
       }
     }
