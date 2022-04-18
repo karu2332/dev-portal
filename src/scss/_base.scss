@@ -35,6 +35,33 @@ a:visited {
   color: black;
 }
 
+.animate-character
+{
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 .section-heading {
   text-align: center;
   background-color: #FFE6AB;
@@ -90,10 +117,9 @@ a:visited {
 }
 
 .project-8 img {
-  width: 80%;
+  width: 50%;
   height: auto;
   margin: auto;
-  margin-top: 30px;
 }
 
 .column-4 {
@@ -114,9 +140,57 @@ a:visited {
   border-radius: 50px;
 }
 
+/* Tooltip text */
+.project-1 .tooltiptext {
+  visibility: hidden;
+  width: 186px;
+  height: 176px;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: -190px;
+  margin-left: 18px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.project-1:hover .tooltiptext {
+  visibility: visible;
+}
+
 .project-2 {
   background-color: white;
   border-radius: 50px;
+}
+
+/* Tooltip text */
+.project-2 .tooltiptext {
+  visibility: hidden;
+  width: 195px;
+  height: 176px;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: -136px;
+  margin-left: 11px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.project-2:hover .tooltiptext {
+  visibility: visible;
 }
 
 .project-3 {
@@ -124,9 +198,57 @@ a:visited {
   border-radius: 50px;
 }
 
+/* Tooltip text */
+.project-3 .tooltiptext {
+  visibility: hidden;
+  width: 186px;
+  height: 176px;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: -210px;
+  margin-left: 18px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.project-3:hover .tooltiptext {
+  visibility: visible;
+}
+
 .project-4 {
   background-color: white;
   border-radius: 50px;
+}
+
+/* Tooltip text */
+.project-4 .tooltiptext {
+  visibility: hidden;
+  width: 186px;
+  height: 176px;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: -210px;
+  margin-left: 18px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.project-4:hover .tooltiptext {
+  visibility: visible;
 }
 
 .project-5 {
@@ -134,9 +256,53 @@ a:visited {
   border-radius: 50px;
 }
 
+/* Tooltip text */
+.project-5 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: 8px;
+  margin-left: 47px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.project-5:hover .tooltiptext {
+  visibility: visible;
+}
+
 .project-6 {
   background-color: white;
   border-radius: 50px;
+}
+
+/* Tooltip text */
+.project-6 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: 8px;
+  margin-left: 47px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.project-6:hover .tooltiptext {
+  visibility: visible;
 }
 
 .project-7 {
@@ -144,48 +310,51 @@ a:visited {
   border-radius: 50px;
 }
 
+/* Tooltip text */
+.project-7 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: 8px;
+  margin-left: 47px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.project-7:hover .tooltiptext {
+  visibility: visible;
+}
+
 .project-8 {
   background-color: white;
   border-radius: 50px;
 }
 
-/* Hover classes for individual project boxes */
-.project-1:hover {
-  background-color: white;
-  opacity: .5;
+/* Tooltip text */
+.project-8 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: 8px;
+  margin-left: 47px;
 }
 
-.project-2:hover {
-  background-color: white;
-  opacity: .5;
-}
-
-.project-3:hover {
-  background-color: white;
-  opacity: .5;
-}
-
-.project-4:hover {
-  background-color: white;
-  opacity: .5;
-}
-
-.project-5:hover {
-  background-color: white;
-  opacity: .5;
-}
-
-.project-6:hover {
-  background-color: white;
-  opacity: .5;
-}
-
-.project-7:hover {
-  background-color: white;
-  opacity: .5;
-}
-
-.project-8:hover {
-  background-color: white;
-  opacity: .5;
+/* Show the tooltip text when you mouse over the tooltip container */
+.project-8:hover .tooltiptext {
+  visibility: visible;
 }
